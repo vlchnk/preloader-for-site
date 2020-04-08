@@ -1,18 +1,3 @@
-# Preloader
-
-Simple preloader in JS, HTML and CSS for site.
-
-#### HTML
-    
-```html
-<div class="preloader">
-    <div class="loader"><img src="/media/swallow-emb.svg" alt=""></
-</div>
-```
-
-#### CSS
-    
-```CSS
 .preloader {
     background: black;
     position: fixed;
@@ -49,18 +34,3 @@ Simple preloader in JS, HTML and CSS for site.
         opacity: 10%;
     }
 }
-```
-
-#### JavaScript
-    
-```JavaScript
-document.body.onload = function() {
-    setTimeout(function() {
-        var preloader = document.querySelector(".preloader");
-        console.log(preloader);
-        if (!preloader.classList.contains('done')) {
-            preloader.classList.add('done');
-        };
-    }, 1000);
-}
-```
